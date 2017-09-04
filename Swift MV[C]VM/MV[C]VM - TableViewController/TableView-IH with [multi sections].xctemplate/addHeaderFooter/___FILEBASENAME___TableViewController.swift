@@ -19,12 +19,9 @@ class ___FILEBASENAMEASIDENTIFIER___TableViewController: UITableViewController {
     // The viewmodel must be let! To prevent memory leaks change the model inside the viewmodel instead of changing the viewmodel object.
     let viewModel: ___FILEBASENAMEASIDENTIFIER___ViewModel = ___FILEBASENAMEASIDENTIFIER___ViewModel()
     
-    
     // MARK: - var variables
     
-    
     // MARK: - Interface Builder Outlets
-    
     
     // MARK: - ViewController Lifecycle Methods
 
@@ -83,7 +80,7 @@ class ___FILEBASENAMEASIDENTIFIER___TableViewController: UITableViewController {
         
         tableView.rx
             .modelSelected(Bindable.self)
-            .subscribe(onNext:  { value in
+            .subscribe(onNext: { value in
                 print("Tapped `\(value)`")
             })
             .disposed(by: disposeBag)

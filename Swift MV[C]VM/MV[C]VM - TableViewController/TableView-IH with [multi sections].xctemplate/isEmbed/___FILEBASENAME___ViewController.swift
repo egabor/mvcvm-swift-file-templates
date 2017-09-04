@@ -64,7 +64,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
         
         tableView.rx
             .modelSelected(Bindable.self)
-            .subscribe(onNext:  { value in
+            .subscribe(onNext: { value in
                 print("Tapped `\(value)`")
             })
             .disposed(by: disposeBag)
