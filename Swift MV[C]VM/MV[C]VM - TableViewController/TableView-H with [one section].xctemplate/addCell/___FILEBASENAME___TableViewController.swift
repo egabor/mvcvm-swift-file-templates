@@ -48,7 +48,7 @@ class ___FILEBASENAMEASIDENTIFIER___TableViewController: UITableViewController {
         
         tableView.rx
             .modelSelected(___VARIABLE_modelName___.self)
-            .subscribe(onNext:  { value in
+            .subscribe(onNext: { value in
                 print("Tapped `\(value)`")
             })
             .disposed(by: disposeBag)
@@ -81,7 +81,6 @@ class ___FILEBASENAMEASIDENTIFIER___TableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
     
     // MARK: - Helper Methods
     

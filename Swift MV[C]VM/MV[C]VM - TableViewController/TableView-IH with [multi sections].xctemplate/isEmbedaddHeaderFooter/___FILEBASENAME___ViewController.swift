@@ -25,7 +25,6 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    
     // MARK: - ViewController Lifecycle Methods
     
     override func viewDidLoad() {
