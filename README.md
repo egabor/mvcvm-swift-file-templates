@@ -1,9 +1,19 @@
-# mvcvm-templates
+# mvcvm-swift-file-templates
 
 ## How to use
 
 - run the install script
+```shell
+./install-templates.sh
+```
 - create an xcode project with these pods added (RxSwift, RxCocoa, RxDataSources)
+
+```ruby
+  pod 'RxSwift',    '~> 3.0'
+  pod 'RxCocoa',    '~> 3.0'
+  pod 'RxDataSources'
+```
+
 - add required files to start working
 > - new file
 > - look for MV[C]VM - Utilities section
@@ -15,6 +25,11 @@
 ## Examples
 - TableView
 - CollectionView
+
+## Donation
+- BTC donation address
+- ETH donation address
+
 
 
 ## Meaning of emojis used in commit messages
