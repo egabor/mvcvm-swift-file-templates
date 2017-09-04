@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.swift-source</string>
+	</array>
+	<key>DefaultCompletionName</key>
+	<string>List MVVM</string>
+	<key>Description</key>
+	<string>Generates a TableView and View Model all hooked up to follow the MVVM model</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>MainTemplateFiles</key>
+	<array>
+		<string>___FILEBASENAME___FooterCell.swift</string>
+		<string>___FILEBASENAME___FooterCellViewModel.swift</string>
+		<string>___FILEBASENAME___Footer.swift</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>The name of the module to create</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Name</key>
+			<string>Footer Name</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>Choose whether or not a delegate skeleton is included.</string>
+			<key>Default</key>
+			<string>true</string>
+			<key>Identifier</key>
+			<string>addModel</string>
+			<key>Name</key>
+			<string>Create file for the model</string>
+			<key>Type</key>
+			<string>checkbox</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>Swift</string>
+			<key>Description</key>
+			<string>The language of template</string>
+			<key>Identifier</key>
+			<string>templateLanguage</string>
+			<key>Name</key>
+			<string>Language:</string>
+			<key>Required</key>
+			<false/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+	</array>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>Summary</key>
+	<string>Templates for Swift using MVVM Model</string>
+	<key>Sort Order</key>
+	<string>10</string>
+</dict>
+</plist>
