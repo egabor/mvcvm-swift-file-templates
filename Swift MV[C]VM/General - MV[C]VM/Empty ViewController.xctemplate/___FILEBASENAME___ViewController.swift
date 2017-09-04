@@ -19,12 +19,9 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
     // The viewmodel must be let! To prevent memory leaks change the model inside the viewmodel instead of changing the viewmodel object.
     let viewModel: ___FILEBASENAMEASIDENTIFIER___ViewModel = ___FILEBASENAMEASIDENTIFIER___ViewModel()
     
-    
     // MARK: - var variables
     
-    
     // MARK: - Interface Builder Outlets
-    
     
     // MARK: - UIViewController Lifecycle Methods
 
