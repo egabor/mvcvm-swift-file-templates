@@ -26,11 +26,6 @@
 - TableView
 - CollectionView
 
-## Donation
-- BTC donation address
-- ETH donation address
-
-
 
 ## Meaning of emojis used in commit messages
 
