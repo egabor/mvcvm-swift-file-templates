@@ -41,7 +41,7 @@ class ___FILEBASENAMEASIDENTIFIER___TableViewController: UITableViewController {
             .asObservable()
             .bind(to: tableView.rx
                 .items(cellIdentifier: "___VARIABLE_cellName___Cell",
-                       cellType: ___VARIABLE_cellName___Cell.self)) { (row, element, cell) in
+                       cellType: ___VARIABLE_cellName___Cell.self)) { (_, element, cell) in
                         cell.bind(to: element)
             }
             .disposed(by: disposeBag)

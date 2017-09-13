@@ -1,4 +1,3 @@
 disabled_rules: # rule identifiers to exclude from running
   - todo
   - type_name
-  - unused_closure_parameter
