@@ -9,11 +9,11 @@
 import Foundation
 
 class ___FILEBASENAMEASIDENTIFIER___Footer: TitlePresentable {
-    
+
     // MARK: - Model Properties
-    
+
     var title: String! = ""
-    
+
     required init(with title: String = "") {
         self.title = title
     }

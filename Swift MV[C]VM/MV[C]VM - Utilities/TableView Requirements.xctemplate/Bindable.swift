@@ -8,5 +8,5 @@
 
 /// Add this protocol to your models if they are going to use in viewmodels.
 protocol Bindable {
-    
+
 }

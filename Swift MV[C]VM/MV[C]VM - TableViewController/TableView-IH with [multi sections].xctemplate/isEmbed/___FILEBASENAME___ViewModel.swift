@@ -12,33 +12,33 @@ import RxSwift
 import RxDataSources
 
 class ___FILEBASENAMEASIDENTIFIER___ViewModel {
-    
+
     // MARK: - let constants
-    
+
     // MARK: - var variables
-    
+
     // Change the sections variable to update the TableView
     var sections = Variable([TableViewSection]())
     var dataSource = RxTableViewSectionedReloadDataSource<TableViewSection>()
-    
+
     // MARK: - Lifecycle Methods
-    
+
     init () {
 
     }
-    
+
     deinit {
         // Don't forget to remove the observers here
     }
-    
+
     // MARK: - Busniness Logic
-    
+
     // MARK: - Helper Methods
-    
+
 }
 
 // MARK: - Notification handlers can be placed here
 
 extension ___FILEBASENAMEASIDENTIFIER___ViewModel {
-    
+
 }
