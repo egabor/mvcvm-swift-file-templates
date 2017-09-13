@@ -16,8 +16,9 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
     
     let disposeBag = DisposeBag()
     
-    // The viewmodel must be let! To prevent memory leaks change the model inside the viewmodel instead of changing the viewmodel object.
-    let viewModel: ___FILEBASENAMEASIDENTIFIER___ViewModel = ___FILEBASENAMEASIDENTIFIER___ViewModel()
+    // The viewmodel must be let!
+    // To prevent memory leaks change the model inside the viewmodel instead of changing the viewmodel object.
+    let viewModel = ___FILEBASENAMEASIDENTIFIER___ViewModel()
     
     // MARK: - var variables
     
@@ -58,20 +59,18 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
         
         // MARK: - Cell Binding
     
-        viewModel.dataSource.configureCell = { dataSource, tableView, indexPath, item in
-            let cell = tableView.dequeueReusableCell(withIdentifier: "\(type(of: item))Cell") as! ReactiveBindable
-            cell.bind(to: item)
-            return cell as! UITableViewCell
+        viewModel.dataSource.configureCell = { [weak self] dataSource, tableView, indexPath, item in
+            return (self?.bindCell(tableView, item))!
         }
         
         // MARK: - Section Header and Footer Binding
         
-        viewModel.dataSource.titleForHeaderInSection = { ds, index in
-            return ds.sectionModels[index].header?.title
+        viewModel.dataSource.titleForHeaderInSection = { dataSource, index in
+            return dataSource.sectionModels[index].header?.title
         }
         
-        viewModel.dataSource.titleForFooterInSection = { ds, index in
-            return ds.sectionModels[index].footer?.title
+        viewModel.dataSource.titleForFooterInSection = { dataSource, index in
+            return dataSource.sectionModels[index].footer?.title
         }
         
         // MARK: - Section Binding
@@ -117,6 +116,14 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
     
     // MARK: - Helper Methods
     
+    func bindCell(_ tableView: UITableView, _ item: Bindable) -> UITableViewCell! {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "\(type(of: item))Cell")
+        if let bindableCell = cell as? ReactiveBindable {
+            bindableCell.bind(to: item)
+        }
+        return cell!
+    }
+    
 }
 
 // MARK: - TableView Delegate Methods
@@ -130,9 +137,7 @@ extension ___FILEBASENAMEASIDENTIFIER___ViewController: UITableViewDelegate {
         guard let item = viewModel.dataSource[section].header else {
             return nil
         }
-        let header = tableView.dequeueReusableCell(withIdentifier: "\(type(of: item))Cell") as! ReactiveBindable
-        header.bind(to: item)
-        return header as? UIView
+        return bindCell(tableView, item)
     }
     */
     
@@ -143,9 +148,7 @@ extension ___FILEBASENAMEASIDENTIFIER___ViewController: UITableViewDelegate {
         guard let item = viewModel.dataSource[section].footer else {
             return nil
         }
-        let footer = tableView.dequeueReusableCell(withIdentifier: "\(type(of: item))Cell") as! ReactiveBindable
-        footer.bind(to: item)
-        return footer as? UIView
+        return bindCell(tableView, item)
     }
     */
 

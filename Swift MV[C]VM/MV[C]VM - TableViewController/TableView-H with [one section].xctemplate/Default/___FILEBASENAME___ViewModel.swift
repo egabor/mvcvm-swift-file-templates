@@ -16,7 +16,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewModel {
     
     // MARK: - var variables
     
-    var items: Variable<[___VARIABLE_modelName___]> = Variable([___VARIABLE_modelName___]())
+    var items = Variable([___VARIABLE_modelName___]())
     
     // MARK: - Lifecycle Methods
     

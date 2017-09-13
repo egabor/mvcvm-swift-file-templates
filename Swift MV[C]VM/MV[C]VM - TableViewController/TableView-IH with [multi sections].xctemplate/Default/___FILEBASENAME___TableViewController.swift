@@ -16,8 +16,9 @@ class ___FILEBASENAMEASIDENTIFIER___TableViewController: UITableViewController {
     
     let disposeBag = DisposeBag()
     
-    // The viewmodel must be let! To prevent memory leaks change the model inside the viewmodel instead of changing the viewmodel object.
-    let viewModel: ___FILEBASENAMEASIDENTIFIER___ViewModel = ___FILEBASENAMEASIDENTIFIER___ViewModel()
+    // The viewmodel must be let!
+    // To prevent memory leaks change the model inside the viewmodel instead of changing the viewmodel object.
+    let viewModel = ___FILEBASENAMEASIDENTIFIER___ViewModel()
     
     // MARK: - var variables
     
@@ -46,10 +47,8 @@ class ___FILEBASENAMEASIDENTIFIER___TableViewController: UITableViewController {
         
         // MARK: - Cell Binding
 
-        viewModel.dataSource.configureCell = { dataSource, tableView, indexPath, item in
-            let cell = tableView.dequeueReusableCell(withIdentifier: "\(type(of: item))Cell") as! ReactiveBindable
-            cell.bind(to: item)
-            return cell as! UITableViewCell
+        viewModel.dataSource.configureCell = { [weak self] dataSource, tableView, indexPath, item in
+            return (self?.bindCell(tableView, item))!
         }
         
         // MARK: - Section Binding
@@ -94,6 +93,14 @@ class ___FILEBASENAMEASIDENTIFIER___TableViewController: UITableViewController {
     */
     
     // MARK: - Helper Methods
+    
+    func bindCell(_ tableView: UITableView, _ item: Bindable) -> UITableViewCell! {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "\(type(of: item))Cell")
+        if let bindableCell = cell as? ReactiveBindable {
+            bindableCell.bind(to: item)
+        }
+        return cell!
+    }
     
 }
 

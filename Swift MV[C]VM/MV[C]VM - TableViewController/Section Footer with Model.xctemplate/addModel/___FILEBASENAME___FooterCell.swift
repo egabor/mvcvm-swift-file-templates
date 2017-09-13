@@ -16,8 +16,9 @@ class ___FILEBASENAMEASIDENTIFIER___FooterCell: UITableViewCell, ReactiveBindabl
     
     let disposeBag = DisposeBag()
     
-    // The viewmodel must be let! To prevent memory leaks change the model inside the viewmodel instead of changing the viewmodel object.
-    let viewModel: ___FILEBASENAMEASIDENTIFIER___FooterCellViewModel = ___FILEBASENAMEASIDENTIFIER___FooterCellViewModel()
+    // The viewmodel must be let!
+    // To prevent memory leaks change the model inside the viewmodel instead of changing the viewmodel object.
+    let viewModel = ___FILEBASENAMEASIDENTIFIER___FooterCellViewModel()
     
     // MARK: - var variables
     

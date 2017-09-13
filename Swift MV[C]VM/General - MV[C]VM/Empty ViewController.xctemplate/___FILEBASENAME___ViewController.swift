@@ -16,8 +16,9 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
     
     let disposeBag = DisposeBag()
     
-    // The viewmodel must be let! To prevent memory leaks change the model inside the viewmodel instead of changing the viewmodel object.
-    let viewModel: ___FILEBASENAMEASIDENTIFIER___ViewModel = ___FILEBASENAMEASIDENTIFIER___ViewModel()
+    // The viewmodel must be let!
+    // To prevent memory leaks change the model inside the viewmodel instead of changing the viewmodel object.
+    let viewModel = ___FILEBASENAMEASIDENTIFIER___ViewModel()
     
     // MARK: - var variables
     

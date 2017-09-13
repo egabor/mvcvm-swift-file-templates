@@ -18,8 +18,8 @@ class ___FILEBASENAMEASIDENTIFIER___ViewModel {
     // MARK: - var variables
     
     // Change the sections variable to update the TableView
-    var sections: Variable<[TableViewSection]> = Variable([TableViewSection]())
-    var dataSource: RxTableViewSectionedReloadDataSource<TableViewSection> = RxTableViewSectionedReloadDataSource<TableViewSection>()
+    var sections = Variable([TableViewSection]())
+    var dataSource = RxTableViewSectionedReloadDataSource<TableViewSection>()
     
     // MARK: - Lifecycle Methods
     
