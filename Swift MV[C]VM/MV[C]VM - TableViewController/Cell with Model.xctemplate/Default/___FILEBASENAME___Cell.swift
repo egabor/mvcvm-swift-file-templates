@@ -47,10 +47,8 @@ class ___FILEBASENAMEASIDENTIFIER___Cell: UITableViewCell, ReactiveBindable {
     }
 
     func bind(to model: Bindable?) {
-        guard let data = (model as? ___VARIABLE_modelName___) else {
-            return
-        }
-        viewModel.model = data
+        guard let model = model as? ___VARIABLE_modelName___ else { return }
+        viewModel.model = model
     }
 
     // MARK: - Helper Methods

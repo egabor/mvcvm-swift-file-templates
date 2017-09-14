@@ -47,10 +47,8 @@ class ___FILEBASENAMEASIDENTIFIER___HeaderCell: UITableViewCell, ReactiveBindabl
     }
 
     func bind(to model: Bindable?) {
-        guard let data = (model as? ___FILEBASENAMEASIDENTIFIER___Header) else {
-            return
-        }
-        viewModel.model = data
+        guard let model = model as? ___FILEBASENAMEASIDENTIFIER___Header else { return }
+        viewModel.model = model
     }
 
     // MARK: - Helper Methods
