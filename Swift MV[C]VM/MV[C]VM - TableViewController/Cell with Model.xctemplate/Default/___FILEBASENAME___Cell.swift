@@ -10,7 +10,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-class ___FILEBASENAMEASIDENTIFIER___Cell: UITableViewCell, ReactiveBindable {
+class ___FILEBASENAMEASIDENTIFIER___Cell: UITableViewCell {
 
     // MARK: - let constants
 
@@ -42,6 +42,14 @@ class ___FILEBASENAMEASIDENTIFIER___Cell: UITableViewCell, ReactiveBindable {
         // Configure the view for the selected state
     }
 
+    // MARK: - Helper Methods
+
+}
+
+// MARK: - Reacive Bindable Implementation
+
+extension ___FILEBASENAMEASIDENTIFIER___Cell: ReactiveBindable {
+
     func setUpBindings() {
         // TODO: Do the viewmodel binding here
     }
@@ -50,8 +58,6 @@ class ___FILEBASENAMEASIDENTIFIER___Cell: UITableViewCell, ReactiveBindable {
         guard let model = model as? ___VARIABLE_modelName___ else { return }
         viewModel.model = model
     }
-
-    // MARK: - Helper Methods
 
 }
 
