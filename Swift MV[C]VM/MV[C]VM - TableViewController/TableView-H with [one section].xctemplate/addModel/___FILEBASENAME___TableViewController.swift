@@ -52,14 +52,15 @@ class ___FILEBASENAMEASIDENTIFIER___TableViewController: UITableViewController {
                 print("Tapped `\(value)`")
             })
             .disposed(by: disposeBag)
+
         /*
-         tableView.rx
-         .itemAccessoryButtonTapped
-         .subscribe(onNext: { indexPath in
-         print("Tapped Detail @ \(indexPath.section),\(indexPath.row)")
-         })
-         .disposed(by: disposeBag)
-         */
+        tableView.rx
+            .itemAccessoryButtonTapped
+            .subscribe(onNext: { indexPath in
+                print("Tapped Detail @ \(indexPath.section),\(indexPath.row)")
+            })
+            .disposed(by: disposeBag)
+        */
 
     }
 
@@ -73,14 +74,14 @@ class ___FILEBASENAMEASIDENTIFIER___TableViewController: UITableViewController {
     }
 
     /*
-     // MARK: - Navigation
-
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
     // MARK: - Helper Methods
 

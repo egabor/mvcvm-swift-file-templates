@@ -68,7 +68,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
             .disposed(by: disposeBag)
 
         /*
-         tableView.rx
+        tableView.rx
             .itemAccessoryButtonTapped
             .subscribe(onNext: { indexPath in
                 print("Tapped Detail @ \(indexPath.section),\(indexPath.row)")
