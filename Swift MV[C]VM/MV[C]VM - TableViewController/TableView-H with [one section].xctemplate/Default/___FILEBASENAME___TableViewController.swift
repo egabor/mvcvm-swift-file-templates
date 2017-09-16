@@ -52,6 +52,7 @@ class ___FILEBASENAMEASIDENTIFIER___TableViewController: UITableViewController {
                 print("Tapped `\(value)`")
             })
             .disposed(by: disposeBag)
+
         /*
         tableView.rx
             .itemAccessoryButtonTapped
