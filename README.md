@@ -1,48 +1,81 @@
-# mvcvm-swift-file-templates
+# 🚧 README is not finished yet.
 
-## How to use
 
-- run the install script
+# iOS Swift File Templates for Xcode using RxSwift, RxCocoa and RxDataSources
+
+<img src="assets/Rx_Logo_M.png" alt="Feel the power of RxSwift." width="36" height="36">
+
+`images here`
+
+## About this project
+
+## Dependencies
+
+## Usage
+
+#### Installing
+
+To install the templates run the `install-templates.sh` script in the terminal.
 ```shell
 ./install-templates.sh
 ```
-- create an xcode project with these pods added (RxSwift, RxCocoa, RxDataSources)
 
-```ruby
-  pod 'RxSwift',    '~> 3.0'
-  pod 'RxCocoa',    '~> 3.0'
-  pod 'RxDataSources'
+#### Uninstalling
+
+If you'd like to remove the previously installed templates run the `uninstall-tamplates.sh` script.
+```shell
+./uninstall-templates.sh
 ```
 
-- add required files to start working
-> - new file
-> - look for MV[C]VM - Utilities section
-> - select TableView requirements
-> - click next
-> - click on create without editing the name
+#### Updating
+
+For updating the templates you must remove them first, then run the install script.
+```shell
+./uninstall-templates.sh
+./install-templates.sh
+```
 
 
-## Examples
-- TableView
-- CollectionView
+### Preparing your project
 
+Add these pods to your Xcode project:
+```ruby
+pod 'RxSwift',    '~> 3.0'
+pod 'RxCocoa',    '~> 3.0'
+pod 'RxDataSources'
+```
+You also have to add the files from **TableView Requirements** template.
+
+Just press <kbd>CMD</kbd> + <kbd>N</kbd> or right click on your source files in Xcode and select **New file...**. 
+
+Scoll down to **MV[C]VM - Utilities** section and select **TableView Requirements**. Then click on **Next** and **Create**.
+
+Now you're done and you can use all the templates.
+
+### With these steps you can make a list presenting some data:
+
+## Exampes
+
+- Repo1
+- Repo2
+
+## Others
 
 ## Meaning of emojis used in commit messages
-
 Commit Type | Emoji
 ----------  | -----
-Initial Commit | [🎉 Party Popper](http://emojipedia.org/party-popper/)
-Metadata | [🔖 Bookmark](http://emojipedia.org/bookmark/)
-New Feature | [✨ Sparkles](http://emojipedia.org/sparkles/)
-Bugfix | [🐛 Bug](http://emojipedia.org/bug/)
-Version tag | [🎟️ Admission Tickets](https://emojipedia.org/admission-tickets/)
-Refactoring | [♻️ Black Universal Recycling Symbol](http://emojipedia.org/black-universal-recycling-symbol/)
-Documentation | [📚 Books](http://emojipedia.org/books/)
-Internationalization | [🌐 Globe With Meridians](http://emojipedia.org/globe-with-meridians/)
-Performance | [🐎 Horse](http://emojipedia.org/horse/)
-Cosmetic | [🎨 Artist Palette](http://emojipedia.org/artist-palette/)
-Tooling | [🔧 Wrench](http://emojipedia.org/wrench/)
-Tests | [🚨 Police Cars Revolving Light](http://emojipedia.org/police-cars-revolving-light/)
-Deprecation | [💩 Pile of Poo](http://emojipedia.org/pile-of-poo/)
-Removal | [🗑️ Wastebasket](http://emojipedia.org/wastebasket/)
-Work In Progress (WIP) | [🚧 Construction Sign](http://emojipedia.org/construction-sign/)
+Initial Commit | 🎉 Party Popper
+Metadata | 🔖 Bookmark
+New Feature | ✨ Sparkles
+Bugfix | 🐛 Bug
+Version tag | 🎟️ Admission Tickets
+Refactoring | ♻️ Black Universal Recycling Symbol
+Documentation | 📚 Books
+Internationalization | 🌐 Globe With Meridians
+Performance | 🐎 Horse
+Cosmetic | 🎨 Artist Palette
+Tooling | 🔧 Wrench
+Tests | 🚨 Police Cars Revolving Light
+Deprecation | 💩 Pile of Poo
+Removal | 🗑️ Wastebasket
+Work In Progress (WIP) | 🚧 Construction Sign
