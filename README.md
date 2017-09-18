@@ -1,8 +1,7 @@
 # 🚧 README is not finished yet.
 
 
-# iOS Swift File Templates for Xcode using RxSwift, RxCocoa and RxDataSources <img src="assets/Rx_Logo_M.png" alt="Feel the power of RxSwift." width="36" height="36">
-
+# iOS Swift File Templates for Xcode using <img src="assets/Rx_Logo_M.png" alt="Feel the power of RxSwift." width="24" height="24"> RxSwift, RxCocoa and RxDataSources
 
 ## About this project
 
