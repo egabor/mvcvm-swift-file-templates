@@ -48,8 +48,7 @@ Scoll down to **MV[C]VM - Utilities** section and select **TableView Requirement
 
 Now you're done and you can use all the templates.
 
-TODO:
-- [] Gif image
+<img src="assets/tutorial_1.gif" alt="Adding the TableView Requirements">
 
 ### With these easy steps you can make a list presenting some data:
 
@@ -73,7 +72,7 @@ TODO:
 ##### STEP 4
 
 * Add a `TableView-IH with [multi sections]` from the previously installed templates. 
-* Fill the ViewController's viewmodel with some data. (sections property)
+* Fill the ViewController's **viewmodel** with some data. (sections property)
 
 ##### STEP 5
 
