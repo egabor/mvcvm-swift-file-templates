@@ -53,39 +53,36 @@ TODO:
 
 ### With these easy steps you can make a list presenting some data:
 
-- Add a `Cell with Model` from the previously installed templates. 
+##### STEP 1
 
------------------
+* Add a `Cell with Model` from the previously installed templates. 
 
-- Add the necessary properties to your **model**.
-- Add an `init()` method to the **model** and pass these properties as parameters.
+* Add the necessary properties to your **model**.
+* Add an `init()` method to the **model** and pass these properties as parameters.
 
------------------
+##### STEP 2
 
-- Add properties (`Variable` types) to the **viewmodel** which going to be connected with the **cell's** outlets.
-- In the **viewmodel** there'll be a variable `var model` with the same type of the **model**. This variable will have a `didSet` method. Update the **viewmodel** properties here.
+* Add properties (`Variable` types) to the **viewmodel** which going to be connected with the **cell's** outlets.
+* In the **viewmodel** there'll be a variable `var model` with the same type of the **model**. This variable will have a `didSet` method. Update the **viewmodel** properties here.
 
------------------
+##### STEP 3
 
-- Create the outlets in the **cell**.
-- Bind the **cell's** outlets with the **viewmodel's** properties in the `setUpBindings()` method.
+* Create the outlets in the **cell**.
+* Bind the **cell's** outlets with the **viewmodel's** properties in the `setUpBindings()` method.
 
------------------
+##### STEP 4
 
-- Add a `TableView-IH with [multi sections]` from the previously installed templates. 
+* Add a `TableView-IH with [multi sections]` from the previously installed templates. 
+* Fill the ViewController's viewmodel with some data. (sections property)
 
------------------
-
-- Fill the ViewController's viewmodel with some data. (sections property)
-
------------------
+##### STEP 5
 
 - Add a UITableViewController to the storyboard and set its class.
 - Add a prototype cell to the tableview and set its class.
 - Also add the necassary outlets and constraints to the **cell**.
 - Connect these outlets with the code.
 
------------------
+##### FINAL STEP
 
 - Build and run.
 
