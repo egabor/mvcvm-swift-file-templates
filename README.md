@@ -48,14 +48,24 @@ Scoll down to **MV[C]VM - Utilities** section and select **TableView Requirement
 
 Now you're done and you can use all the templates.
 
+TODO:
+- [] Gif image
+
 ### With these steps you can make a list presenting some data:
+
+TODO:
+- [] Steps
 
 ## Exampes
 
-- Repo1
-- Repo2
+TODO:
+- [] Repo1
+- [] Repo2
 
 ## Others
+
+TODO:
+- [] Message
 
 ## Meaning of emojis used in commit messages
 Commit Type | Emoji
