@@ -51,13 +51,29 @@ Now you're done and you can use all the templates.
 TODO:
 - [] Gif image
 
-### With these steps you can make a list presenting some data:
+### With these easy steps you can make a list presenting some data:
 
-TODO:
-- Add the necessary properties to your model.
-- 
-- Also add the `Variable` equivalent of every property to the viewmodel.
+- Add a `Cell with Model` from the previously installed templates. 
 
+- Add the necessary properties to your **model**.
+- Add an `init()` method to the **model** and pass these properties as parameters.
+
+- Add properties (`Variable` types) to the **viewmodel** which going to be connected with the **cell's** outlets.
+- In the **viewmodel** there'll be a variable `var model` with the same type of the **model**. This variable will have a `didSet` method. Update the **viewmodel** properties here.
+
+- Create the outlets in the **cell**.
+- Bind the **cell's** outlets with the **viewmodel's** properties in the `setUpBindings()` method.
+
+- Add a `TableView-IH with [multi sections]` from the previously installed templates. 
+
+- Fill the ViewController's viewmodel with some data. (sections property)
+
+- Add a UITableViewController to the storyboard and set its class.
+- Add a prototype cell to the tableview and set its class.
+- Also add the necassary outlets and constraints to the **cell**.
+- Connect these outlets with the code.
+
+- Build and run.
 
 ## Exampes
 
