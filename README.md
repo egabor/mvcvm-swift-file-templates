@@ -54,7 +54,10 @@ TODO:
 ### With these steps you can make a list presenting some data:
 
 TODO:
-- [] Steps
+- Add the necessary properties to your model.
+- 
+- Also add the `Variable` equivalent of every property to the viewmodel.
+
 
 ## Exampes
 
