@@ -99,9 +99,9 @@ All donations are appreciated. ❤️
 
 Don't forget to leave a star here. 😉
 
-BTC address: 127tUY5nWP3ucv6uweion1cCGeraEXsfzV
+**BTC address: 127tUY5nWP3ucv6uweion1cCGeraEXsfzV**
 
-ETH address: 0x53510eB7E2C683E28ecefEfc0B0a887227ed3da6
+**ETH address: 0x53510eB7E2C683E28ecefEfc0B0a887227ed3da6**
 
 ## Meaning of emojis used in commit messages
 Commit Type | Emoji
