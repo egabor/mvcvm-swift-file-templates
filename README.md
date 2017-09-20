@@ -82,7 +82,7 @@ Now you're done and you can use all the templates.
 
 ##### FINAL STEP
 
-* Build and run.
+* Build and run. 🎉
 
 [Video tutorial](https://youtu.be/LrHBwWcUx3Y)
 
@@ -96,9 +96,11 @@ TODO:
 ## Donations
 
 All donations are appreciated. ❤️
+
 Don't forget to leave a star here. 😉
 
 BTC address: 127tUY5nWP3ucv6uweion1cCGeraEXsfzV
+
 ETH address: 0x53510eB7E2C683E28ecefEfc0B0a887227ed3da6
 
 ## Meaning of emojis used in commit messages
