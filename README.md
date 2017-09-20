@@ -90,19 +90,19 @@ Now you're done and you can use all the templates.
 
 ## Examples
 
-[Simple example](https://github.com/egabor/swift-mvcvm-tableview-example-2)
+* [Simple example](https://github.com/egabor/swift-mvcvm-tableview-example-2)
 
-- Detailed example (Coming soon.)
+* Detailed example (Coming soon.)
 
 ## Donations
 
 All donations are appreciated. ❤️
 
-Don't forget to leave a star here. 😉
-
 * BTC address: **127tUY5nWP3ucv6uweion1cCGeraEXsfzV**
 
 * ETH address: **0x53510eB7E2C683E28ecefEfc0B0a887227ed3da6**
+
+Don't forget to leave a star here. 😉
 
 ## Meaning of emojis used in commit messages
 Commit Type | Emoji
