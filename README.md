@@ -1,11 +1,12 @@
 # 🚧 README is not finished yet.
 
-
 # iOS Swift File Templates for Xcode using <img src="assets/Rx_Logo_M.png" alt="Feel the power of RxSwift." width="24" height="24"> RxSwift, RxCocoa and RxDataSources
 
 ## About this project
 
 ## Dependencies
+
+The templates are using some reactive libraries such as [RxSwift](https://github.com/ReactiveX/RxSwift), [RxCocoa](https://github.com/ReactiveX/RxSwift/tree/master/RxCocoa) and [RxDataSources](https://github.com/RxSwiftCommunity/RxDataSources).
 
 ## Usage
 
@@ -22,7 +23,6 @@ If you'd like to remove the previously installed templates run the `uninstall-ta
 ```shell
 ./uninstall-templates.sh
 ```
-
 #### Updating
 
 For updating the templates you must remove them first, then run the install script.
@@ -30,8 +30,6 @@ For updating the templates you must remove them first, then run the install scri
 ./uninstall-templates.sh
 ./install-templates.sh
 ```
-
-
 ### Preparing your project
 
 Add these pods to your Xcode project:
@@ -66,7 +64,7 @@ Now you're done and you can use all the templates.
 
 ##### STEP 3
 
-* Create the outlets in the **cell**.
+* Create the outlets in the **cell**. (Not required in this example.)
 * Bind the **cell's** outlets with the **viewmodel's** properties in the `setUpBindings()` method.
 
 ##### STEP 4
@@ -77,24 +75,31 @@ Now you're done and you can use all the templates.
 ##### STEP 5
 
 * Add a UITableViewController to the storyboard and set its class.
-* Add a prototype cell to the tableview and set its class.
-* Also add the necassary outlets and constraints to the **cell**.
-* Connect these outlets with the code.
+* Set the entry point.
+* Add a prototype cell to the tableview and set its class and the reuse identifier.
+* Also add the necassary outlets and constraints to the **cell**. (Not required in this example.)
+* Connect these outlets with the code. (Not required in this example.)
 
 ##### FINAL STEP
 
 * Build and run.
 
-## Exampes
+[Video tutorial](https://youtu.be/LrHBwWcUx3Y)
+
+## Examples
+
+[Simple example](https://github.com/egabor/swift-mvcvm-tableview-example-2)
 
 TODO:
-- [] Repo1
-- [] Repo2
+- [] Detailed example
 
-## Others
+## Donations
 
-TODO:
-- [] Message
+All donations are appreciated. ❤️
+Don't forget to leave a star here. 😉
+
+BTC address: 127tUY5nWP3ucv6uweion1cCGeraEXsfzV
+ETH address: 0x53510eB7E2C683E28ecefEfc0B0a887227ed3da6
 
 ## Meaning of emojis used in commit messages
 Commit Type | Emoji
