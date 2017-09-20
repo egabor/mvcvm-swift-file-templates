@@ -4,6 +4,8 @@
 
 ## About this project
 
+These templates are designed to speed up and make the iOS development so much easier by eliminating the repeating processes and making your code better organized.
+
 ## Dependencies
 
 The templates are using some reactive libraries such as [RxSwift](https://github.com/ReactiveX/RxSwift), [RxCocoa](https://github.com/ReactiveX/RxSwift/tree/master/RxCocoa) and [RxDataSources](https://github.com/RxSwiftCommunity/RxDataSources).
@@ -90,8 +92,7 @@ Now you're done and you can use all the templates.
 
 [Simple example](https://github.com/egabor/swift-mvcvm-tableview-example-2)
 
-TODO:
-- [] Detailed example
+- Detailed example (Coming soon.)
 
 ## Donations
 
@@ -99,9 +100,9 @@ All donations are appreciated. ❤️
 
 Don't forget to leave a star here. 😉
 
-BTC address: **127tUY5nWP3ucv6uweion1cCGeraEXsfzV**
+* BTC address: **127tUY5nWP3ucv6uweion1cCGeraEXsfzV**
 
-ETH address: **0x53510eB7E2C683E28ecefEfc0B0a887227ed3da6**
+* ETH address: **0x53510eB7E2C683E28ecefEfc0B0a887227ed3da6**
 
 ## Meaning of emojis used in commit messages
 Commit Type | Emoji
