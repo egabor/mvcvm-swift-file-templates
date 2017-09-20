@@ -86,7 +86,7 @@ Now you're done and you can use all the templates.
 
 * Build and run. 🎉
 
-[Video tutorial](https://youtu.be/LrHBwWcUx3Y)
+##### [Video tutorial](https://youtu.be/LrHBwWcUx3Y)
 
 ## Examples
 
