@@ -19,7 +19,7 @@ To install the templates run the `install-templates.sh` script in the terminal.
 
 #### Uninstalling
 
-If you'd like to remove the previously installed templates run the `uninstall-tamplates.sh` script.
+If you'd like to remove the previously installed templates run the `uninstall-templates.sh` script.
 ```shell
 ./uninstall-templates.sh
 ```
