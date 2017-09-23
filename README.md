@@ -70,13 +70,13 @@ Now you're done and you can use all the templates.
 ##### STEP 4
 
 * Add a `TableView-IH with [multi sections]` from the previously installed templates. 
-* Fill the ViewController's **viewmodel** with some data. (sections property)
+* Fill the ViewController's **viewmodel** with some data (sections property).
 
 ##### STEP 5
 
-* Add a UITableViewController to the storyboard and set its class.
+* Add a UITableViewController to the storyboard and set its *class*.
 * Set the entry point.
-* Add a prototype cell to the tableview and set its class and the reuse identifier.
+* Add a prototype cell to the tableview and set its *class* and the *reuseidentifier*.
 * Also add the necassary outlets and constraints to the **cell**. (Not required in this example.)
 * Connect these outlets with the code. (Not required in this example.)
 
@@ -100,7 +100,7 @@ All donations are appreciated. ❤️
 
 * ETH address: **0x53510eB7E2C683E28ecefEfc0B0a887227ed3da6**
 
-Don't forget to leave a star here. 😉
+Don't forget to leave a star here. 😀👍
 
 ## Meaning of emojis used in commit messages
 Commit Type | Emoji
