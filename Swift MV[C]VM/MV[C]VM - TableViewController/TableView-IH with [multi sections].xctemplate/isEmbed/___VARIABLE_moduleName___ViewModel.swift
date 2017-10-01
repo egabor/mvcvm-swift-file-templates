@@ -9,27 +9,22 @@
 import Foundation
 import RxCocoa
 import RxSwift
+import RxDataSources
 
-class ___VARIABLE_cellName___CellViewModel {
+class ___VARIABLE_moduleName___ViewModel {
 
     // MARK: - let constants
 
     // MARK: - var variables
 
-    var model: ___VARIABLE_modelName___? {
-        didSet {
-            // Prepare the values
-        }
-    }
+    // Change the sections variable to update the TableView
+    var sections = Variable([TableViewSection]())
+    var dataSource = RxTableViewSectionedReloadDataSource<TableViewSection>()
 
     // MARK: - Lifecycle Methods
 
-    init() {
+    init () {
 
-    }
-
-    init(with model: ___VARIABLE_modelName___) {
-        self.model = model
     }
 
     deinit {
@@ -44,6 +39,6 @@ class ___VARIABLE_cellName___CellViewModel {
 
 // MARK: - Notification handlers can be placed here
 
-extension ___VARIABLE_cellName___CellViewModel {
+extension ___VARIABLE_moduleName___ViewModel {
 
 }

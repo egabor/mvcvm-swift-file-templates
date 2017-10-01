@@ -10,7 +10,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-class ___VARIABLE_cellName___Cell: UITableViewCell {
+class ___VARIABLE_moduleName___Cell: UITableViewCell {
 
     // MARK: - let constants
 
@@ -18,7 +18,7 @@ class ___VARIABLE_cellName___Cell: UITableViewCell {
 
     // The viewmodel must be let!
     // To prevent memory leaks change the model inside the viewmodel instead of changing the viewmodel object.
-    let viewModel = ___VARIABLE_cellName___CellViewModel()
+    let viewModel = ___VARIABLE_moduleName___CellViewModel()
 
     // MARK: - var variables
 
@@ -48,7 +48,7 @@ class ___VARIABLE_cellName___Cell: UITableViewCell {
 
 // MARK: - Reacive Bindable Implementation
 
-extension ___VARIABLE_cellName___Cell: ReactiveBindable {
+extension ___VARIABLE_moduleName___Cell: ReactiveBindable {
 
     func setUpBindings() {
         // TODO: Do the viewmodel binding here
@@ -63,12 +63,12 @@ extension ___VARIABLE_cellName___Cell: ReactiveBindable {
 
 // MARK: - Interface Builder Actions
 
-extension ___VARIABLE_cellName___Cell {
+extension ___VARIABLE_moduleName___Cell {
 
 }
 
 // MARK: - Notification handlers can be placed here
 
-extension ___VARIABLE_cellName___Cell {
+extension ___VARIABLE_moduleName___Cell {
 
 }

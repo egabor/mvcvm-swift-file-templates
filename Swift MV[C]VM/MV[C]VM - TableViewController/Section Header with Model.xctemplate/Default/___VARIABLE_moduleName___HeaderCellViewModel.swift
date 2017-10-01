@@ -10,13 +10,13 @@ import Foundation
 import RxCocoa
 import RxSwift
 
-class ___VARIABLE_cellName___CellViewModel {
+class ___VARIABLE_moduleName___HeaderCellViewModel {
 
     // MARK: - let constants
 
     // MARK: - var variables
 
-    var model: ___VARIABLE_modelName___? {
+    var model: ___VARIABLE_moduleName___Header? {
         didSet {
             // Prepare the values
         }
@@ -28,7 +28,7 @@ class ___VARIABLE_cellName___CellViewModel {
 
     }
 
-    init(with model: ___VARIABLE_modelName___) {
+    init(with model: ___VARIABLE_moduleName___Header) {
         self.model = model
     }
 
@@ -44,6 +44,6 @@ class ___VARIABLE_cellName___CellViewModel {
 
 // MARK: - Notification handlers can be placed here
 
-extension ___VARIABLE_cellName___CellViewModel {
+extension ___VARIABLE_moduleName___HeaderCellViewModel {
 
 }

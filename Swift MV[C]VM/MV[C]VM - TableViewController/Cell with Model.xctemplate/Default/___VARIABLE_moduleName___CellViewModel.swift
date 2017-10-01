@@ -10,7 +10,7 @@ import Foundation
 import RxCocoa
 import RxSwift
 
-class ___VARIABLE_cellName___CellViewModel {
+class ___VARIABLE_moduleName___CellViewModel {
 
     // MARK: - let constants
 
@@ -44,6 +44,6 @@ class ___VARIABLE_cellName___CellViewModel {
 
 // MARK: - Notification handlers can be placed here
 
-extension ___VARIABLE_cellName___CellViewModel {
+extension ___VARIABLE_moduleName___CellViewModel {
 
 }

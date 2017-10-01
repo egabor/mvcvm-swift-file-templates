@@ -14,9 +14,9 @@
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>MainTemplateFiles</key>
 	<array>
-		<string>___FILEBASENAME___FooterCell.swift</string>
-		<string>___FILEBASENAME___FooterCellViewModel.swift</string>
-		<string>___FILEBASENAME___Footer.swift</string>
+		<string>___VARIABLE_moduleName___FooterCell.swift</string>
+		<string>___VARIABLE_moduleName___FooterCellViewModel.swift</string>
+		<string>___VARIABLE_moduleName___Footer.swift</string>
 	</array>
 	<key>Options</key>
 	<array>
@@ -24,7 +24,7 @@
 			<key>Description</key>
 			<string>The name of the module to create</string>
 			<key>Identifier</key>
-			<string>productName</string>
+			<string>moduleName</string>
 			<key>Name</key>
 			<string>Footer Name</string>
 			<key>NotPersisted</key>

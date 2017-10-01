@@ -14,8 +14,8 @@
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>MainTemplateFiles</key>
 	<array>
-		<string>___FILEBASENAME___Cell.swift</string>
-		<string>___FILEBASENAME___CellViewModel.swift</string>
+		<string>___VARIABLE_moduleName___Cell.swift</string>
+		<string>___VARIABLE_moduleName___CellViewModel.swift</string>
 		<string>___VARIABLE_modelName___.swift</string>
 	</array>
 	<key>Options</key>
@@ -24,7 +24,7 @@
 			<key>Description</key>
 			<string>The name of the module to create</string>
 			<key>Identifier</key>
-			<string>productName</string>
+			<string>moduleName</string>
 			<key>Name</key>
 			<string>Cell Name</string>
 			<key>NotPersisted</key>

@@ -8,11 +8,7 @@
 
 import Foundation
 
-class ___VARIABLE_modelName___: Bindable {
-
-    // MARK: - Model Properties
-
-    init () {
-
-    }
+class ___VARIABLE_fileName___ {
+    static let sharedInstance = ___VARIABLE_fileName___()
+    private init() {}
 }

@@ -8,11 +8,13 @@
 
 import Foundation
 
-class ___VARIABLE_modelName___: Bindable {
+class ___VARIABLE_moduleName___Footer: TitlePresentable {
 
     // MARK: - Model Properties
 
-    init () {
+    var title: String! = ""
 
+    required init(with title: String = "") {
+        self.title = title
     }
 }

@@ -14,8 +14,8 @@
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>MainTemplateFiles</key>
 	<array>
-		<string>___FILEBASENAME___TableViewController.swift</string>
-		<string>___FILEBASENAME___ViewModel.swift</string>
+		<string>___VARIABLE_moduleName___TableViewController.swift</string>
+		<string>___VARIABLE_moduleName___ViewModel.swift</string>
 		<string>___VARIABLE_cellName___Cell.swift</string>
 		<string>___VARIABLE_cellName___CellViewModel.swift</string>
 		<string>___VARIABLE_modelName___.swift</string>
@@ -26,7 +26,7 @@
 			<key>Description</key>
 			<string>The name of the module to create</string>
 			<key>Identifier</key>
-			<string>productName</string>
+			<string>moduleName</string>
 			<key>Name</key>
 			<string>Module Name</string>
 			<key>NotPersisted</key>
