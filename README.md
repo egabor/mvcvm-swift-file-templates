@@ -120,3 +120,14 @@ Tests | 🚨 Police Cars Revolving Light
 Deprecation | 💩 Pile of Poo
 Removal | 🗑️ Wastebasket
 Work In Progress (WIP) | 🚧 Construction Sign
+| Lint                       | :shirt: `:shirt:`                             |
+| Translation                | :alien: `:alien:`                             |
+| Critical hotfix            | :ambulance: `:ambulance:`                     |
+| Accessibility              | :wheelchair: `:wheelchair:`                   |
+| Code review changes        | :ok_hand: `:ok_hand:`                         |
+| Analytics or tracking code | :chart_with_upwards_trend: `:chart_with_upwards_trend:` |
+| Removing a dependency      | :heavy_minus_sign: `:heavy_minus_sign:`       |
+| Adding a dependency        | :heavy_plus_sign: `:heavy_plus_sign:`         |
+| Security                   | :lock: `:lock:`                               |
+| General update             | :zap: `:zap:`                                 |
+| Text                       | :pencil: `:pencil:`                           |
