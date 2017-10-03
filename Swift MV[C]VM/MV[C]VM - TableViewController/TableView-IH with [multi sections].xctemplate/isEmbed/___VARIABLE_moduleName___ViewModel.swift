@@ -31,7 +31,7 @@ class ___VARIABLE_moduleName___ViewModel {
         // Don't forget to remove the observers here
     }
 
-    // MARK: - Busniness Logic
+    // MARK: - Business Logic
 
     // MARK: - Helper Methods
 
