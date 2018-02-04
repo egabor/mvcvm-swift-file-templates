@@ -34,9 +34,9 @@ For updating the templates you must remove them first, then run the install scri
 
 Add these pods to your Xcode project:
 ```ruby
-pod 'RxSwift',    '~> 3.0'
-pod 'RxCocoa',    '~> 3.0'
-pod 'RxDataSources'
+pod 'RxSwift',    '~> 4.1.1'
+pod 'RxCocoa',    '~> 4.1.1'
+pod 'RxDataSources', '~> 3.0.2'
 ```
 You also have to add the files from **TableView Requirements** template.
 
