@@ -9,7 +9,6 @@
 import Foundation
 import RxCocoa
 import RxSwift
-import RxDataSources
 
 class ___VARIABLE_moduleName___ViewModel {
 
@@ -19,7 +18,6 @@ class ___VARIABLE_moduleName___ViewModel {
 
     // Change the sections variable to update the TableView
     var sections = Variable([TableViewSection]())
-    var dataSource = RxTableViewSectionedReloadDataSource<TableViewSection>()
 
     // MARK: - Lifecycle Methods
 

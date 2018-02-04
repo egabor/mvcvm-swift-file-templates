@@ -9,6 +9,7 @@
 import UIKit
 import RxCocoa
 import RxSwift
+import RxDataSources
 
 class ___VARIABLE_moduleName___ViewController: UIViewController {
 
@@ -21,6 +22,10 @@ class ___VARIABLE_moduleName___ViewController: UIViewController {
     let viewModel = ___VARIABLE_moduleName___ViewModel()
 
     // MARK: - var variables
+
+    lazy var dataSource = RxTableViewSectionedReloadDataSource<TableViewSection>(configureCell: { [weak self] dataSource, tableView, indexPath, item in
+        return (self?.bindCell(tableView, item))!
+    })
 
     // MARK: - Interface Builder Outlets
 
@@ -56,27 +61,27 @@ class ___VARIABLE_moduleName___ViewController: UIViewController {
 
         tableView.rx.setDelegate(self)
             .addDisposableTo(disposeBag)
-
-        // MARK: - Cell Binding
-
-        viewModel.dataSource.configureCell = { [weak self] dataSource, tableView, indexPath, item in
-            return (self?.bindCell(tableView, item))!
-        }
+        
+        // MARK: - Section Binding
+        
+        viewModel.sections.asObservable()
+            .bind(to: tableView.rx.items(dataSource: dataSource))
+            .disposed(by: disposeBag)
 
         // MARK: - Section Header and Footer Binding
 
-        viewModel.dataSource.titleForHeaderInSection = { dataSource, index in
+        dataSource.titleForHeaderInSection = { dataSource, index in
             return dataSource.sectionModels[index].header?.title
         }
 
-        viewModel.dataSource.titleForFooterInSection = { dataSource, index in
+        dataSource.titleForFooterInSection = { dataSource, index in
             return dataSource.sectionModels[index].footer?.title
         }
 
         // MARK: - Section Binding
 
         viewModel.sections.asObservable()
-            .bind(to: tableView.rx.items(dataSource: viewModel.dataSource))
+            .bind(to: tableView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
 
         // MARK: - Selection Handling
@@ -134,7 +139,7 @@ extension ___VARIABLE_moduleName___ViewController: UITableViewDelegate {
     // Uncomment in case of use custom section header
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        guard let item = viewModel.dataSource[section].header else {
+        guard let item = dataSource[section].header else {
             return nil
         }
         return bindCell(tableView, item)
@@ -145,7 +150,7 @@ extension ___VARIABLE_moduleName___ViewController: UITableViewDelegate {
     // Uncomment in case of use custom section footer
 
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        guard let item = viewModel.dataSource[section].footer else {
+        guard let item = dataSource[section].footer else {
             return nil
         }
         return bindCell(tableView, item)

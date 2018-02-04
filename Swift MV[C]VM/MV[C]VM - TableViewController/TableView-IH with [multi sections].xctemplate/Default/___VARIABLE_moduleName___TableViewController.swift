@@ -9,6 +9,7 @@
 import UIKit
 import RxCocoa
 import RxSwift
+import RxDataSources
 
 class ___VARIABLE_moduleName___TableViewController: UITableViewController {
 
@@ -21,6 +22,10 @@ class ___VARIABLE_moduleName___TableViewController: UITableViewController {
     let viewModel = ___VARIABLE_moduleName___ViewModel()
 
     // MARK: - var variables
+
+    lazy var dataSource = RxTableViewSectionedReloadDataSource<TableViewSection>(configureCell: { [weak self] dataSource, tableView, indexPath, item in
+        return (self?.bindCell(tableView, item))!
+    })
 
     // MARK: - Interface Builder Outlets
 
@@ -45,16 +50,10 @@ class ___VARIABLE_moduleName___TableViewController: UITableViewController {
 
     func setUpBindings() {
 
-        // MARK: - Cell Binding
-
-        viewModel.dataSource.configureCell = { [weak self] dataSource, tableView, indexPath, item in
-            return (self?.bindCell(tableView, item))!
-        }
-
         // MARK: - Section Binding
 
         viewModel.sections.asObservable()
-            .bind(to: tableView.rx.items(dataSource: viewModel.dataSource))
+            .bind(to: tableView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
 
         // MARK: - Selection Handling
