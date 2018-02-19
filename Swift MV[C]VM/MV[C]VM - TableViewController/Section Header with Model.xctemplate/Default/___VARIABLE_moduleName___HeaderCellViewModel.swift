@@ -18,6 +18,7 @@ class ___VARIABLE_moduleName___HeaderCellViewModel {
 
     var model: ___VARIABLE_moduleName___Header? {
         didSet {
+            guard let model = model else { return }
             // Prepare the values
         }
     }

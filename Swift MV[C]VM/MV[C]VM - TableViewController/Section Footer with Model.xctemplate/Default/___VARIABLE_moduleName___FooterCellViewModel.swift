@@ -18,6 +18,7 @@ class ___VARIABLE_moduleName___FooterCellViewModel {
 
     var model: ___VARIABLE_moduleName___Footer? {
         didSet {
+            guard let model = model else { return }
             // Prepare the values
         }
     }

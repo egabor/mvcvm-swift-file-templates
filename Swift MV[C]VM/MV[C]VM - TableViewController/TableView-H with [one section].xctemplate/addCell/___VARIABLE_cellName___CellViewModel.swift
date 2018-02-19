@@ -18,6 +18,7 @@ class ___VARIABLE_cellName___CellViewModel {
 
     var model: ___VARIABLE_modelName___? {
         didSet {
+            guard let model = model else { return }
             // Prepare the values
         }
     }
